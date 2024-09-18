@@ -1,0 +1,166 @@
+.slider {
+  &__content {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 120px 30px;
+
+    @include on-desktop {
+      border-radius: 30% 0 0;
+    }
+  }
+
+  &__line {
+    display: flex;
+    transition: all ease 1s;
+  }
+
+  &__image {
+    position: relative;
+    object-fit: cover;
+    right: 0;
+    left: 0;
+    height: 390px;
+    width: 320px;
+    z-index: 1;
+
+    @include on-desktop {
+      position: relative;
+      object-position: center;
+      right: 0;
+      bottom: 0;
+      width: 49%;
+      height: 680px;
+      border-radius: 0;
+    }
+  }
+
+  &__button-left {
+    position: absolute;
+    padding: 0;
+    top: 250px;
+    left: 20px;
+    width: 32px;
+    height: 32px;
+    z-index: 2;
+    background-color: transparent;
+    border-width: 0;
+    border-radius: 50%;
+    transition: all ease 1s;
+
+    @include on-tablet {
+      top: 242px;
+      left: 40px;
+    }
+
+    @include on-desktop {
+      top: 582px;
+      left: 78px;
+    }
+
+    @include on-design {
+      left: 48px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 20px $main-blue;
+    }
+
+    &:active {
+      box-shadow: 0 0 20px $main-blue;
+    }
+  }
+
+  &__button-right {
+    position: absolute;
+    padding: 0;
+    top: 250px;
+    left: 20px;
+    width: 32px;
+    height: 32px;
+    z-index: 2;
+    background-color: transparent;
+    border-width: 0;
+    border-radius: 50%;
+    transition: all ease 1s;
+
+    @include on-tablet {
+      top: 242px;
+      left: 40px;
+    }
+
+    @include on-desktop {
+      top: 582px;
+      left: 78px;
+    }
+
+    @include on-design {
+      left: 48px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 20px $main-blue;
+    }
+
+    &:active {
+      box-shadow: 0 0 20px $main-blue;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: 298px;
+    left: 20px;
+
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+    z-index: 2;
+
+    @include on-tablet {
+      top: 290px;
+      left: 40px;
+    }
+
+    @include on-desktop {
+      top: 564px;
+      left: 182px;
+    }
+
+    @include on-design {
+      left: 152px;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 326px;
+    left: 20px;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #fff;
+    z-index: 2;
+
+    @include on-tablet {
+      top: 318px;
+      left: 40px;
+    }
+
+    @include on-desktop {
+      top: 592px;
+      left: 182px;
+    }
+
+    @include on-design {
+      left: 152px;
+    }
+  }
+}

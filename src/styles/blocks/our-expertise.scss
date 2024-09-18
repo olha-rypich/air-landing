@@ -1,0 +1,124 @@
+.our-expertise {
+  background-color: $light-blue;
+
+  &__content {
+    padding: 72px 0;
+    background-color: #fff;
+    border-radius: 30px;
+
+    @include on-tablet {
+      padding: 128px 0;
+    }
+
+    @include on-desktop {
+      padding: 128px 54px 134px;
+    }
+  }
+
+  &__title {
+    margin: 0 auto 56px;
+    width: 280px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 120%;
+    text-align: center;
+    color: $title-color;
+
+    @include on-tablet {
+      margin: 0 0 64px;
+      width: 100%;
+      font-size: 52px;
+      line-height: 150%;
+    }
+  }
+
+  &__cards {
+    @include on-desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 0 auto;
+      max-width: 940px;
+    }
+
+    @include on-design {
+      width: 1170px;
+      margin: 0 auto;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto 56px;
+    width: max-content;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:last-of-type {
+      margin: 0 auto;
+
+      @include on-desktop {
+        margin: 0;
+      }
+    }
+
+    @include on-tablet {
+      margin: 0 auto 72px;
+    }
+
+    @include on-desktop {
+      margin: 0;
+    }
+  }
+
+  &__card-image {
+    margin: 0 auto 32px;
+    border-radius: 16px;
+
+    @include on-desktop {
+      margin: 0 auto 40px;
+    }
+  }
+
+  &__card-title {
+    margin: 0 0 16px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: $title-color;
+    text-align: center;
+  }
+
+  &__card-paragraph {
+    margin: 0;
+    width: 284px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $text-color;
+    text-align: center;
+
+    @include on-tablet {
+      width: 376px;
+    }
+
+    @include on-desktop {
+      width: 222px;
+      margin: 0 auto;
+    }
+
+    @include on-design {
+      width: 272px;
+      margin: 0 auto;
+    }
+  }
+}

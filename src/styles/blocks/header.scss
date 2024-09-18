@@ -1,0 +1,64 @@
+.header {
+  background-color: $main-blue;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+  }
+
+  &__logo {
+    height: 26px;
+    text-decoration: none;
+  }
+
+  &__menu-opener {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 8px;
+
+    @include on-desktop {
+      display: none;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @include on-desktop {
+      display: inline;
+    }
+  }
+
+  &__link {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 2px;
+      margin-top: 8px;
+      background-color: $color-pink;
+      border-radius: 4px;
+    }
+
+    @include on-desktop {
+      padding-top: 10px;
+    }
+  }
+}

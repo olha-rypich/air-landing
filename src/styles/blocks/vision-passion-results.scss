@@ -1,0 +1,99 @@
+.vision-passion-results {
+  @include on-tablet {
+    background-image: url(../images/Shapes.svg);
+    background-repeat: no-repeat;
+    background-size: 980px;
+    background-position: center;
+  }
+
+  @include on-desktop {
+    background-size: 1298px;
+  }
+
+  @include on-design {
+    background-size: 1450px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 72px 18px;
+
+    @include on-tablet {
+      padding: 200px 18px;
+    }
+  }
+
+  &__title {
+    width: 280px;
+    margin: 0 auto 24px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 120%;
+    text-align: center;
+    color: $title-color;
+
+    @include on-tablet {
+      width: 480px;
+      font-size: 52px;
+    }
+
+    @include on-desktop {
+      width: 754px;
+      line-height: 150%;
+    }
+  }
+
+  &__paragraph {
+    width: 280px;
+    margin: 0 auto 56px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 150%;
+    text-align: center;
+    color: $text-color;
+
+    @include on-tablet {
+      width: 558px;
+      margin: 0 auto 64px;
+      font-size: 24px;
+    }
+
+    @include on-desktop {
+      width: 754px;
+    }
+  }
+
+  &__button-container {
+    margin: 0 auto;
+  }
+
+  &__button {
+    width: 280px;
+    height: 56px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    border: 1px solid $color-pink;
+    border-radius: 64px;
+    background-color: $color-pink;
+    color: #fff;
+
+    @include on-tablet {
+      width: 264px;
+    }
+
+    &:hover {
+      border: 1px solid $button-hover;
+      background-color: $button-hover;
+    }
+
+    &:active {
+      border: 1px solid $button-hover;
+      background-color: $button-hover;
+    }
+  }
+}

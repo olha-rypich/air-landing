@@ -1,0 +1,111 @@
+.testimonials-card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 280px;
+  margin: 0 0 24px;
+  padding: 32px 37px;
+  background-color: #fff;
+  box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
+  border-radius: 16px;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:last-of-type {
+    margin: 0;
+  }
+
+  @include on-tablet {
+    width: 558px;
+  }
+
+  @include on-desktop {
+    width: 292px;
+    margin: 0 20px 0 0;
+  }
+
+  @include on-design {
+    width: 362px;
+    margin: 0 30px 0 0;
+  }
+
+  &__image {
+    width: 196px;
+    height: 196px;
+    margin: 0 auto 27px;
+
+    @include on-tablet {
+      width: 250px;
+      height: 250px;
+    }
+
+    @include on-desktop {
+      width: 196px;
+      height: 196px;
+    }
+
+    @include on-design {
+      width: 250px;
+      height: 250px;
+    }
+  }
+
+  &__quote-marks {
+    margin: 0 auto 10px;
+
+    @include on-tablet {
+      margin: 0 auto 18px;
+    }
+
+    @include on-desktop {
+      margin: 0 auto 10px;
+    }
+  }
+
+  &__paragraph {
+    margin: 0 auto 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 150%;
+    text-align: center;
+    color: $text-color;
+
+    @include on-tablet {
+      width: 354px;
+    }
+
+    @include on-desktop {
+      width: 196px;
+    }
+
+    @include on-design {
+      width: 240px;
+    }
+  }
+
+  &__name {
+    margin: 0 0 4px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 150%;
+    text-align: center;
+    color: $title-color;
+  }
+
+  &__heading {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $heading-color;
+  }
+}
